@@ -4,6 +4,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+{if $config['appName'] == '跑路'}
+<script>window.location.href='{$config["baseUrl"]}/paolu.html';</script>
+{/if}
 <html>
 	<head>
 		<title>{$config["appName"]}</title>
@@ -47,6 +50,7 @@
 							<ul>
                                 <li><a href="#1">简介</a></li>
 					            <li><a href="/user">用户中心</a></li>
+								<li><a href="/user/logout">退出登录</a></li>
 								<li><a href="#5">下载</a></li>
                         </ul>
 						</nav>
@@ -66,8 +70,7 @@
                                <li><a href="#1">简介</a></li>
 								<li><a href="/auth/login">登录</a></li>
 								<li><a href="/auth/register">注册</a></li>
-                              	<li><a href="#4">联系</a></li>
-								<li><a href="#5">下载</a></li>
+                              	<li><a href="#5">下载</a></li>
                               
                            </ul>
 						</nav>
@@ -148,7 +151,7 @@
                               </div>
                      <!-- 版权底部 -->
                       <footer id="footer">
-                   <p class="copyright">&copy;2015-2017 {$config["appName"]}</p>
+                   <p class="copyright">&copy;2015-{date("Y")} {$config["appName"]}</p>
                       </footer>
               <!-- 版权结束 -->
 			 </div>

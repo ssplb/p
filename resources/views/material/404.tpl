@@ -10,7 +10,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 	<link rel="shortcut icon" type="image/ico" href="images/ssr.ico">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ssplb/p@0x01/public/assets/css/main.css" />
-
       <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ssplb/p@0x01/public/assets/css/noscript.min.css" />
       </noscript>
@@ -30,7 +29,7 @@
 							</ul>
 						</nav>
               </header>
-					 <footer id="footer"><p class="copyright">&copy;2014-2017 {$config["appName"]}</p></footer>
+					 <footer id="footer"><p class="copyright">&copy;2014-{date("Y")} {$config["appName"]}</p></footer>
 			</div>
 			<div id="bg"></div>
 			<script src="https://cdn.jsdelivr.net/gh/ssplb/p@0x01/public/assets/js/jquery.min.js"></script>
